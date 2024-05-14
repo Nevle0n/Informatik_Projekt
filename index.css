@@ -1,0 +1,212 @@
+
+
+
+
+body{
+    background-color: #bbb;
+}
+
+
+
+/* Usefull Stuff */
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.rightside {
+    float: right;
+}
+
+.leftside {
+    float: left;
+}
+
+
+/* Frontpage Buttons*/
+
+.buttons {
+    background-color: #4CAF50;
+    height: 80vh;
+    margin: 10vh 15vi;
+    
+}
+
+
+.button-right {
+    width: 40%;
+    max-width: 290px;
+    height: 100%;
+    background-color: #bbb;
+    float: right;
+    margin-right: 5vi;
+  }
+
+.button-left {
+    width: 40%;
+    max-width: 290px;
+    height: 100%;
+    background-color: #bbb;
+    float: left;
+    margin-left: 5vi;
+}
+  
+.button-right:hover {
+    background-color: #555;
+  }
+  
+.button-left:hover {
+    background-color: #555;
+  }
+
+
+/* Slideshow */
+
+.slideshow {
+    position: relative;
+    margin: 75px auto; /* Centering horizontally */
+    padding: 20px; /* Adjust the padding as needed */
+    border: 2px solid #ccc; /* Optional: Add border for visualization */
+    width: 80%; /* Set container width */
+    max-width: 700px; /* Set max-width for responsiveness */
+    height: 450px; /* Set fixed height for the container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Ensure the image doesn't overflow the container */
+}
+
+
+.slideshow .btn_left {
+    position: absolute;
+    top: 50%;
+    left: 7.5%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: transparent;
+    color: white;
+    font-size: 15px;
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+.slideshow .btn_right {
+    position: absolute;
+    top: 50%;
+    left: 92.5%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: transparent;
+    color: white;
+    font-size: 15px;
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+.slideshow :hover {
+    color: black;
+
+
+}
+
+#slideshow_img {
+    width: 100%; /* Set width to fill the container */
+    height: 100%; /* Set height to fill the container */
+    object-fit: cover; /* Fill the container, maintaining aspect ratio */
+}
+
+
+
+
+
+/* Navbar */
+
+#navbar{
+    z-index: 1;
+    background-color: transparent; /* Set background color*/
+    position: fixed; /* Fix navbar position*/
+    color: white; /* Set base text color*/
+    width: 100%; /* Set nabar width*/
+    top: 0px; /* Set top margin*/
+    left: 0px; /* Set left margin*/
+    right: 0px; /* Set right margin*/
+    -webkit-transition: background-color 0.3s ease-out;
+    -moz-transition: background-color 0.3s ease-out;
+    -o-transition: background-color 0.3s ease-out;
+    transition: background-color 0.3s ease-out;
+}
+
+/* Style the search box inside the navigation bar */
+#navbar input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+  }
+
+
+#navbar a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding: 15px;
+    float: left;
+}
+
+#navbar a:hover{
+    background-color: #bbb;
+    color: white;
+}
+
+#topnav a:active {
+    background-color: #bbb;
+    color: white;
+    font-size: 150%;
+  }
+
+#navbar a.right{
+    float: right;
+  }
+
+#navbar a.left{
+    float: left;
+}
+
+#navbar a.center{
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+/* Nabbar Search */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#rounded_line {
+    border-top: 8px solid #bbb;
+    border-radius: 5px;
+  }
