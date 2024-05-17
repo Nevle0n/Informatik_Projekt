@@ -197,3 +197,27 @@ body{
 
 /* Navbar Search */
 
+#search_bar {
+    width: 200px; /* Set the width of the search bar */
+    height: 30px; /* Set the height of the search bar */
+    padding: 5px; /* Add some padding inside the search bar */
+    border: 1px solid #ccc; /* Add a border to the search bar */
+    border-radius: 5px; /* Add rounded corners to the search bar */
+    font-size: 14px; /* Set the font size of the search bar */
+    margin-right: 10px; /* Add some space to the right of the search bar */
+  }
+  
+  /* Style the search button */
+  #search_button {
+    background-color: #4CAF50; /* Set the background color of the button */
+    color: white; /* Set the text color of the button */
+    padding: 5px 10px; /* Add some padding inside the button */
+    border: none; /* Remove the border from the button */
+    border-radius: 5px; /* Add rounded corners to the button */
+    cursor: pointer; /* Change the cursor to a pointer when hovering over the button */
+  }
+  
+  /* Style the search button when hovering over it */
+  #search_button:hover {
+    background-color: #3e8e41; /* Change the background color of the button when hovering over it */
+  }

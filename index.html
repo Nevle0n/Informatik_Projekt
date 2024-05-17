@@ -16,13 +16,11 @@
 
 <!--Navbar-->
 <div id="navbar">
-    <form class="left">
-        <label for="search_bar">
-            <button id="search_button" type="button">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-        </label>
-        <input id="search_bar" type="search" name="item_search">
+    <form id="search-form" class="left">
+        <button id="search-button" type="button">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <input id="search-input" type="search" name="item_search" placeholder="Search...">
     </form>
     <!--<a id="search" href="#search" class="left"><i class="fa-solid fa-magnifying-glass"></i> Search</a>-->
     <a href="#profile" class="right"><i class="fa-regular fa-user"></i></a>
@@ -121,7 +119,18 @@
             }
         }
         
+        // Navbar search
+        const searchButton = document.getElementById("search-button");
+        const searchInput = document.getElementById("search-input");
 
+        searchButton.addEventListener("click", () => {
+            searchInput.style.width = "200px";
+            searchInput.focus();
+        });
+
+        searchInput.addEventListener("blur", () => {
+            searchInput.style.width = "0";
+        });
     </script>
 
 
