@@ -21,7 +21,7 @@
     <a href="#settings" class="right">Settings</a>
     <a href="#home" class="center">Website_Name</a>
     <form id="search-form" class="left">
-        <button id="search-button" type="button" onclick="navbarSearch(clickCount)">
+        <button id="search-button" type="button" onclick="navbarSearch()">
             <i class="fa-solid fa-magnifying-glass"></i>
         </button>
         <input id="search-input" type="search" name="item_search" placeholder="Search...">
@@ -123,7 +123,7 @@
         const searchInput = document.getElementById("search-input");
 
         var clickCount = 0
-        function navbarSearch(clickCount) {
+        function navbarSearch() {
             if (clickCount == 0){
                 searchInput.style.width = "200px";
                 searchInput.focus();
