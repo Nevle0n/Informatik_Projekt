@@ -120,8 +120,23 @@
         
         // Navbar search
         const searchButton = document.getElementById("search-button");
-            const searchInput = document.getElementById("search-input");
+        const searchInput = document.getElementById("search-input");
 
+        var clickCount = 0
+        function navbarSearch(clickCount) {
+            if (clickCount == 0){
+                searchInput.style.width = "200px";
+                searchInput.focus();
+                clickCount += 1
+            }
+            else{
+                searchInput.style.width = "0";
+                clickCount = 0
+            }
+
+        }
+
+        /*
         searchButton.addEventListener("click", () => {
             searchInput.style.width = "200px";
             searchInput.focus();
@@ -130,6 +145,7 @@
         searchInput.addEventListener("blur", () => {
             searchInput.style.width = "0";
         });
+        */
     </script>
 
 
