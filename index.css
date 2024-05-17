@@ -210,9 +210,9 @@ body{
     background-color: transparent;
     border: none;
     cursor: pointer;
-    padding: 0 10px;
+    padding: 0 10px;  
 }
-
+  
 #search-input {
     position: absolute;
     top: 0;
@@ -225,8 +225,9 @@ body{
     color: #fff;
     padding: 5px 10px;
     transition: width 0.3s ease-out;
+    box-sizing: border-box;
 }
-
+  
 #search-input::placeholder {
     color: #fff;
 }
