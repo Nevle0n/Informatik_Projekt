@@ -200,12 +200,12 @@ body{
 #search-form {
     position: absolute;
     top: 50%;
-    left: 50px;
+    left: 0;
     transform: translateY(-50%);
     display: flex;
     align-items: center;
 }
-
+  
 #search-button {
     background-color: transparent;
     border: none;
