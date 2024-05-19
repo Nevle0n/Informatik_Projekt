@@ -226,6 +226,8 @@ body{
     color: #fff;
     padding: 5px 10px;
     transition: width 1.0s ease-out;
+    transition-delay: 0.5s;
+    
     box-sizing: border-box;
 }
   
