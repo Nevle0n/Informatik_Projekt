@@ -125,6 +125,15 @@
         var clickCount = 0
 
 
+
+        searchInput.addEventListener("blur", () => {
+            searchInput.style.width = "0";
+            searchInput.style.display = "none";
+            clickCount = 0;
+        });
+
+
+
         searchButton.addEventListener("click", () => {
             if (clickCount == 0){
                 searchInput.style.display = "block";
@@ -139,11 +148,7 @@
             }
         });
 
-        searchInput.addEventListener("blur", () => {
-            searchInput.style.width = "0";
-            searchInput.style.display = "none";
-            clickCount = 0;
-        });
+        
 
     </script>
 

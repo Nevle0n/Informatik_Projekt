@@ -215,6 +215,7 @@ body{
   
 #search-input {
     position: absolute;
+    display: none;
     top: 0;
     left: 100%;
     width: 0;
