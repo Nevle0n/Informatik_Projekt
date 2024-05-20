@@ -124,12 +124,12 @@
 
 
         searchButton.addEventListener("click", () => {
-            searchInput.toggleClass('hidden'); 
+            searchInput.toggleClass('search-hidden'); 
             searchInput.focus();
         });
 
         searchInput.addEventListener("blur", () => {
-            searchInput.addClass('hidden'); 
+            searchInput.addClass('search-hidden'); 
             clickCount = 0;
         });
 
