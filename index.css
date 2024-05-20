@@ -218,15 +218,15 @@ body{
     display: none;
     top: 0;
     left: 100%;
-    width: 0;
+    width: 200px;
     height: 100%;
     background-color: transparent;
     border: none;
     border-bottom: 1px solid #fff;
     color: #fff;
     padding: 5px 10px;
-    transition: width 1.0s ease-out;
-
+    /*transition: width 1.0s ease-out;*/
+    transition: display 1.0s ease-out;
     box-sizing: border-box;
 }
   
