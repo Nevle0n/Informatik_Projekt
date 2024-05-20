@@ -234,6 +234,8 @@ body{
 
 .search-animation{
     animation-name: showHidden;
+    animation-direction: alternate;
+    animation-fill-mode: forwards ;
     animation-duration: 1s;
 }
 

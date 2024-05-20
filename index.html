@@ -122,23 +122,15 @@
         const searchButton = document.getElementById("search-button");
         const searchInput = document.getElementById("search-input");
 
-        var clickCount = 0
+
 
 
         searchButton.addEventListener("click", () => {
-            if (clickCount == 0){
-                searchInput.classList.add("search-animation")
-                //searchInput.style.display = "block";
-                //searchInput.style.width = "200px";
-                searchInput.focus();
-                clickCount += 1;
-            }
-            else{
-                searchInput.classList.remove("search-animation")
-                //searchInput.style.width = "0px";
-                //searchInput.style.display = "none";
-                clickCount = 0;
-            }
+            searchInput.classList.toggle("search-animation")
+            //searchInput.style.display = "block";
+            //searchInput.style.width = "200px";
+            searchInput.focus();
+            clickCount += 1;
         });
 
         searchInput.addEventListener("blur", () => {
