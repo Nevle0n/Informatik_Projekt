@@ -137,7 +137,7 @@ body{
     position: fixed; /* Fix navbar position*/
     color: #E8DFCA; /* Set base text color*/
     width: 100%; /* Set nabar width*/
-    height: 50px;
+    height: 100px;
     top: 0px; /* Set top margin*/
     left: 0px; /* Set left margin*/
     right: 0px; /* Set right margin*/
