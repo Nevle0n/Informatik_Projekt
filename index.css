@@ -215,7 +215,7 @@ body{
   
 #search-input {
     position: absolute;
-    display: none;
+    /*display: none;*/
     top: 0;
     left: 100%;
     width: 200px;
@@ -232,4 +232,9 @@ body{
   
 #search-input::placeholder {
     color: #fff;
+}
+
+.search-hidden {
+    width: 0;
+    transition: all .7s;
 }

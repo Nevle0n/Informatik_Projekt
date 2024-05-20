@@ -122,26 +122,14 @@
         const searchButton = document.getElementById("search-button");
         const searchInput = document.getElementById("search-input");
 
-        var clickCount = 0
-
 
         searchButton.addEventListener("click", () => {
-            if (clickCount == 0){
-                searchInput.style.display = "block";
-                //searchInput.style.width = "200px";
-                searchInput.focus();
-                clickCount += 1;
-            }
-            else{
-                //searchInput.style.width = "0px";
-                searchInput.style.display = "none";
-                clickCount = 0;
-            }
+            searchInput.toggleClass('hidden'); 
+            searchInput.focus();
         });
 
         searchInput.addEventListener("blur", () => {
-            //searchInput.style.width = "0px";
-            searchInput.style.display = "none";
+            searchInput.addClass('hidden'); 
             clickCount = 0;
         });
 
