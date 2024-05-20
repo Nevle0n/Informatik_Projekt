@@ -193,7 +193,10 @@ body{
 }
 
 .nav_line{
-    top: 100px;
+    position: absolute;
+    top: 1000%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     border: 5px solid #4F6F52;
     border-radius: 5px;
 }
