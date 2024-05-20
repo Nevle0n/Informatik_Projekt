@@ -24,7 +24,7 @@
         <button id="search-button" type="button">
             <i class="fa-solid fa-magnifying-glass"></i>
         </button>
-        <input id="search-input" class="search-hidden" type="search" name="item_search" placeholder="Search...">
+        <input id="search-input" type="search" name="item_search" placeholder="Search...">
     </form>
 </div>
 
@@ -122,16 +122,27 @@
         const searchButton = document.getElementById("search-button");
         const searchInput = document.getElementById("search-input");
 
+        var clickCount = 0
+
 
         searchButton.addEventListener("click", () => {
-            searchInput.toggleClass('search-hidden'); 
-            searchInput.focus();
+            if (clickCount == 0){
+                searchInput.style.display = "block";
+                searchInput.style.width = "200px";
+                searchInput.focus();
+                clickCount += 1;
+            }
+            else{
+                searchInput.style.width = "0px";
+                searchInput.style.display = "none";
+                clickCount = 0;
+            }
         });
 
         searchInput.addEventListener("blur", () => {
-            searchInput.addClass('search-hidden'); 
+            searchInput.style.width = "0px";
+            searchInput.style.display = "none";
             clickCount = 0;
-            
         });
 
     </script>

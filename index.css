@@ -215,26 +215,20 @@ body{
   
 #search-input {
     position: absolute;
-    /*display: none;*/
+    display: none;
     top: 0;
     left: 100%;
-    /*width: 200px;*/
+    width: 0;
     height: 100%;
     background-color: transparent;
     border: none;
     border-bottom: 1px solid #fff;
     color: #fff;
     padding: 5px 10px;
-    /*transition: width 1.0s ease-out;*/
-    transition-duration: 1s;
+    transition: width 0.3s ease-out;
     box-sizing: border-box;
 }
   
 #search-input::placeholder {
     color: #fff;
-}
-
-.search-hidden {
-    width: 0;
-    transition: all .7s;
 }
