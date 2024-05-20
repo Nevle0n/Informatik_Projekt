@@ -226,7 +226,7 @@ body{
     color: #fff;
     padding: 5px 10px;
     /*transition: width 1.0s ease-out;*/
-    transition: display 1.0s ease-out;
+    transition-duration: 1s;
     box-sizing: border-box;
 }
   
