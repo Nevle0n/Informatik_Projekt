@@ -193,6 +193,7 @@ body{
 }
 
 .nav_line{
+    margin: 0%;
     top: 100%;
     border: 5px solid #4F6F52;
     border-radius: 5px;
