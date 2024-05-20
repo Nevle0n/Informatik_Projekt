@@ -215,7 +215,7 @@ body{
   
 #search-input {
     position: absolute;
-    display: none;
+    display: block;
     top: 0;
     left: 100%;
     width: 0;
@@ -227,6 +227,7 @@ body{
     padding: 5px 10px;
     transition: width 0.3s ease-out;
     box-sizing: border-box;
+    overflow: hidden;
 }
   
 #search-input::placeholder {
