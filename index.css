@@ -3,7 +3,7 @@
 
 
 body{
-    background-color: #bbb;
+    background-color: #F5EFE6;
 }
 
 
@@ -25,14 +25,14 @@ body{
 
 
 #rounded_line {
-    border-top: 8px solid #bbb;
+    border-top: 8px solid #4F6F52;
     border-radius: 5px;
   }
 
 /* Frontpage Buttons*/
 
 .buttons {
-    background-color: #4CAF50;
+    background-color: #F5EFE6;
     height: 80vh;
     margin: 10vh 15vi;
     
@@ -43,7 +43,7 @@ body{
     width: 40%;
     max-width: 290px;
     height: 100%;
-    background-color: #bbb;
+    background-color: #4F6F52;
     float: right;
     margin-right: 5vi;
   }
@@ -52,17 +52,17 @@ body{
     width: 40%;
     max-width: 290px;
     height: 100%;
-    background-color: #bbb;
+    background-color: #4F6F52;
     float: left;
     margin-left: 5vi;
 }
   
 .button-right:hover {
-    background-color: #555;
+    background-color: #1A4D2E;
   }
   
 .button-left:hover {
-    background-color: #555;
+    background-color: #1A4D2E;
   }
 
 
@@ -90,7 +90,7 @@ body{
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     background-color: transparent;
-    color: white;
+    color: #4F6F52;
     font-size: 15px;
     padding: 10px 10px;
     border: none;
@@ -105,7 +105,7 @@ body{
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     background-color: transparent;
-    color: white;
+    color: #4F6F52;
     font-size: 15px;
     padding: 10px 10px;
     border: none;
@@ -114,7 +114,7 @@ body{
     text-align: center;
 }
 .slideshow :hover {
-    color: black;
+    color: #1A4D2E;
 
 
 }
@@ -135,7 +135,7 @@ body{
     z-index: 1;
     background-color: transparent; /* Set background color*/
     position: fixed; /* Fix navbar position*/
-    color: white; /* Set base text color*/
+    color: #E8DFCA; /* Set base text color*/
     width: 100%; /* Set nabar width*/
     top: 0px; /* Set top margin*/
     left: 0px; /* Set left margin*/
@@ -159,12 +159,12 @@ body{
 }
 
 #navbar a:hover{
-    background-color: #bbb;
+    background-color: #E8DFCA;
     color: white;
 }
 
 #topnav a:active {
-    background-color: #bbb;
+    background-color: #E8DFCA;
     color: white;
     font-size: 150%;
   }
