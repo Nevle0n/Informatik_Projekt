@@ -157,6 +157,8 @@ body{
     display: block;
     padding: 15px;
     float: left;
+    border-bottom: #4F6F52;
+    border-bottom-style: solid;
 }
 
 #navbar a:hover{
@@ -179,7 +181,6 @@ body{
 #navbar a.left{
     float: left;
     top: 50%;
-    
     max-width: min-content;
 }
 
@@ -192,13 +193,7 @@ body{
     max-width: min-content;
 }
 
-.nav_line{
-    margin: 0%;
-    bottom: 0%;
-    width: max-content;
-    border: 5px solid #4F6F52;
-    border-radius: 5px;
-}
+
 
 
 
