@@ -215,7 +215,7 @@ body{
   
 #search-input {
     position: absolute;
-    display: none;
+    /*display: none;*/
     top: 0;
     left: 100%;
     width: 0;
@@ -234,11 +234,11 @@ body{
 
 .search-animation{
     animation-name: showHidden;
-    animation-duration: 0.3s;
+    animation-duration: 1s;
 }
 
 @keyframes showHidden{
-    0% {display: none;}
-    10% {display: block; width: 0px;}
+    0% {/*display: none; */width: 0px;}
+    /*10% {display: block;}*/
     100% {width: 200px;}
 }
