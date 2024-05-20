@@ -172,10 +172,14 @@ body{
 
 #navbar a.right{
     float: right;
+    position: absolute;
+    top: 50%;
   }
 
 #navbar a.left{
     float: left;
+    position: absolute;
+    top: 50%;
 }
 
 #navbar a.center{
@@ -186,6 +190,9 @@ body{
     transform: translate(-50%, -50%);
 }
 
+.nav_Line{
+    top: 100%;
+}
 
 
 
