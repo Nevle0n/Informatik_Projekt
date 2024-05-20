@@ -225,11 +225,19 @@ body{
     border-bottom: 1px solid #fff;
     color: #fff;
     padding: 5px 10px;
-    transition: width 0.3s ease-out;
     box-sizing: border-box;
-    overflow: hidden;
 }
   
 #search-input::placeholder {
     color: #fff;
+}
+
+.search-animation{
+    animation-name: showHidden;
+    animation-duration: 0.3s;
+}
+
+@keyframes showHidden{
+    from{width: 0px; display: none;}
+    to{width: 200px; display: block;}
 }
