@@ -20,12 +20,15 @@
     <a href="#profile" class="right"><i class="fa-regular fa-user"></i></a>
     <a href="#settings" class="right">Settings</a>
     <a href="#home" class="center">Website_Name</a>
-    <form id="search-form" class="left">
-        <button id="search-button" type="button">
-            <i class="fa-solid fa-magnifying-glass"></i>
-        </button>
-        <input id="search-input" type="search" name="item_search" placeholder="Search...">
-    </form>
+    <div class="search-box">
+        <div class="searchform">
+            <input id="s" type="text" value="Search site"/>    
+            <div class="close">
+                <span class="front"></span>
+                <span class="back"></span>
+            </div>   
+        </div>
+    </div>
 </div>
 
 
@@ -118,28 +121,7 @@
             }
         }
         
-        // Navbar search
-        const searchButton = document.getElementById("search-button");
-        const searchInput = document.getElementById("search-input");
-
-
-
-
-        searchButton.addEventListener("click", () => {
-            searchInput.classList.toggle("search-animation")
-            //searchInput.style.display = "block";
-            //searchInput.style.width = "200px";
-            searchInput.focus();
-            clickCount += 1;
-        });
-
-        searchInput.addEventListener("blur", () => {
-            searchInput.classList.remove("search-animation")
-            //searchInput.style.width = "0px";
-            //searchInput.style.display = "none";
-            clickCount = 0;
-        });
-
+ 
     </script>
 
 
