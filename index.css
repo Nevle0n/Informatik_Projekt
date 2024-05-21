@@ -1,5 +1,5 @@
 body{
-    background-color: #E8DFCA;
+    background-color: #F5EFE6;
 }
 
 
@@ -25,9 +25,42 @@ body{
     border-radius: 5px;
   }
 
+/* Frontpage Buttons*/
 
+.buttons {
+    background-color: #F5EFE6;
+    height: 80vh;
+    margin: 10vh 15vi;
+    
+}
+
+
+.button-right {
+    width: 40%;
+    max-width: 290px;
+    height: 100%;
+    background-color: #4F6F52;
+    float: right;
+    margin-right: 5vi;
+  }
+
+.button-left {
+    width: 40%;
+    max-width: 290px;
+    height: 100%;
+    background-color: #4F6F52;
+    float: left;
+    margin-left: 5vi;
+}
   
-/* Main Website */
+.button-right:hover {
+    background-color: #1A4D2E;
+  }
+  
+.button-left:hover {
+    background-color: #1A4D2E;
+  }
+
 
 /* Slideshow */
 
@@ -98,7 +131,7 @@ body{
     z-index: 1;
     background-color: transparent; /* Set background color*/
     position: fixed; /* Fix navbar position*/
-    color: white; /* Set base text color*/
+    color: #E8DFCA; /* Set base text color*/
     width: 100%; /* Set nabar width*/
     height: 100px;
     top: 0px; /* Set top margin*/
@@ -125,12 +158,12 @@ body{
 }
 
 #navbar a:hover{
-    background-color: #F5EFE6;
+    background-color: #E8DFCA;
     color: white;
 }
 
 #topnav a:active {
-    background-color: #F5EFE6;
+    background-color: #E8DFCA;
     color: white;
     font-size: 150%;
   }
@@ -285,11 +318,11 @@ h1 {
 }
  
 #damen {
-    background-image: url('DELINEV Woman Bild.jpg');
+    background-image: url('DELINEV Woman Bild.jpg'); /* Setze hier den Pfad zu deinem Damenbild ein */
 }
  
 #herren {
-    background-image: url('DELINEV Men Bild.jpeg');
+    background-image: url('DELINEV Men Bild.jpeg'); /* Setze hier den Pfad zu deinem Herrenbild ein */
 }
  
 .section-link {
