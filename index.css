@@ -306,6 +306,7 @@ h1 {
     height: 70vh; /* Höhe der Boxen */
     justify-content: space-between;
     gap: 20px; /* Lücke zwischen den Boxen */
+    margin: auto;
 }
  
 .section {
