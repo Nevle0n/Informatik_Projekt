@@ -136,9 +136,135 @@
 </html>
 
 
+<!DOCTYPE html>
+<html lang="en">
 
+<!--Name der Seite-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="index.css">
+    <title>
+        DELINEV
+    </title>
+</head>
 
+<!--Main Webseite-->
+<body>
 
+    <!--Navbar-->
+    <div id="navbar">
+        <a href="#profile" class="right"><i class="fa-regular fa-user"></i></a>
+        <a href="#settings" class="right">Settings</a>
+        <a href="#home" class="center"><img src="DELINEV_LOGO.png" alt="logo" style=""></a>
+        <div class="search-box" class="left">
+            <div class="searchform">
+                <input id="s" type="text" value="Search site"/>    
+                <div class="close">
+                    <span class="front"></span>
+                    <span class="back"></span>
+                </div>   
+            </div>
+        </div>
+    </div>
+
+    <!--Slideshow-->
+    <div class="slideshow">
+        <img id="slideshow_img" src="download.jpg" alt="Image 1">
+        <button class="btn_left" onclick="count -= 2, slideshow(), slideshowReset()"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="btn_right" onclick="slideshow(), slideshowReset()"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+
+    <!--Title-->
+    <h1 class="title">DELINEV</h1>
+
+    <!--Buttons Section-->
+    <div class="buttons-section">
+        <div class="section-title">MÄNNER</div>
+        <div class="button-grid">
+            <button class="grid-button">Button 1</button>
+            <button class="grid-button">Button 2</button>
+            <button class="grid-button">Button 3</button>
+            <button class="grid-button">Button 4</button>
+            <button class="grid-button">Button 5</button>
+            <button class="grid-button">Button 6</button>
+            <button class="grid-button">Button 7</button>
+            <button class="grid-button">Button 8</button>
+            <button class="grid-button">Button 9</button>
+            <button class="grid-button">Button 10</button>
+            <button class="grid-button">Button 11</button>
+            <button class="grid-button">Button 12</button>
+            <button class="grid-button">Button 13</button>
+            <button class="grid-button">Button 14</button>
+            <button class="grid-button">Button 15</button>
+            <button class="grid-button">Button 16</button>
+        </div>
+        <hr>
+        <div class="section-title">FRAUEN</div>
+        <div class="button-grid">
+            <button class="grid-button">Button 1</button>
+            <button class="grid-button">Button 2</button>
+            <button class="grid-button">Button 3</button>
+            <button class="grid-button">Button 4</button>
+            <button class="grid-button">Button 5</button>
+            <button class="grid-button">Button 6</button>
+            <button class="grid-button">Button 7</button>
+            <button class="grid-button">Button 8</button>
+            <button class="grid-button">Button 9</button>
+            <button class="grid-button">Button 10</button>
+            <button class="grid-button">Button 11</button>
+            <button class="grid-button">Button 12</button>
+            <button class="grid-button">Button 13</button>
+            <button class="grid-button">Button 14</button>
+            <button class="grid-button">Button 15</button>
+            <button class="grid-button">Button 16</button>
+        </div>
+    </div>
+
+    <!--Scripts-->
+    <script>
+        // Slideshow
+        slideshowIntervall = setInterval(slideshow, 10000);
+        
+        count = 0;
+        const images = ["download.jpg", "OIP.jpg", "platzhalter.jpeg", "bild.jpg"];
+        const img = document.getElementById("slideshow_img")
+
+        function slideshow() {
+            count ++;
+            if (count > images.length - 1) {count = 0;}
+            if (count < 0) {count = images.length - 1}
+            img.setAttribute('src', images[count]);
+            
+        }
+
+        function slideshowReset() {
+            clearInterval(slideshowIntervall)
+            slideshowIntervall = setInterval(slideshow, 10000);
+        }
+
+        // Navbar scroll
+        window.onscroll = function() {navbarScroll()};
+
+        function navbarScroll() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+                document.getElementById("navbar").style.backgroundColor = "#E8DFCA";
+                document.querySelectorAll('#navbar a').forEach(function(navbarLink) {
+                    navbarLink.style.color = "black";
+                });
+            }
+            else{
+                document.getElementById("navbar").style.backgroundColor = "transparent";
+                document.querySelectorAll('#navbar a').forEach(function(navbarLink) {
+                    navbarLink.style.color = "white";
+                });
+            }
+        }
+    </script>
+</body>
+</html>
+<s></s>
 
 
 
