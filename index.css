@@ -250,6 +250,40 @@ input#s:focus + .close span.back{
 
 
 
+/* Preview-Grid */
+
+
+
+.buttons-section {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    justify-items: center;
+    margin-bottom: 20px;
+}
+
+.grid-button {
+    width: 100px;
+    height: 100px;
+    background-color: #E8DFCA;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
@@ -283,11 +317,11 @@ h1 {
 }
  
 #damen {
-    background-image: url('DELINEV Woman Bild.jpg'); /* Setze hier den Pfad zu deinem Damenbild ein */
+    background-image: url('DELINEV Woman Bild.jpg'); 
 }
  
 #herren {
-    background-image: url('DELINEV Men Bild.jpeg'); /* Setze hier den Pfad zu deinem Herrenbild ein */
+    background-image: url('DELINEV Men Bild.jpeg'); 
 }
  
 .section-link {
@@ -327,37 +361,3 @@ h1 {
 
 
 
-
-
-
-
-.buttons-section {
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.section-title {
-    font-size: 1.5rem;
-    margin: 20px 0;
-    text-align: center;
-}
-
-.button-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    justify-items: center;
-    margin-bottom: 20px;
-}
-
-.grid-button {
-    width: 100px;
-    height: 100px;
-    background-color: #E8DFCA;
-    border: none;
-    cursor: pointer;
-    font-size: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
