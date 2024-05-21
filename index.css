@@ -1,5 +1,5 @@
 body{
-    background-color: #F5EFE6;
+    background-color: #E8DFCA;
 }
 
 
@@ -131,7 +131,7 @@ body{
     z-index: 1;
     background-color: transparent; /* Set background color*/
     position: fixed; /* Fix navbar position*/
-    color: #E8DFCA; /* Set base text color*/
+    color: white; /* Set base text color*/
     width: 100%; /* Set nabar width*/
     height: 100px;
     top: 0px; /* Set top margin*/
@@ -158,12 +158,12 @@ body{
 }
 
 #navbar a:hover{
-    background-color: #E8DFCA;
+    background-color: #F5EFE6;
     color: white;
 }
 
 #topnav a:active {
-    background-color: #E8DFCA;
+    background-color: #F5EFE6;
     color: white;
     font-size: 150%;
   }
