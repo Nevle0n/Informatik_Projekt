@@ -286,10 +286,12 @@ h1 {
  
 #damen {
     background-image: url('DELINEV Woman Bild.jpg');
+    border-radius: 5px;
 }
  
 #herren {
     background-image: url('DELINEV Men Bild.jpeg');
+    border-radius: 5px;
 }
  
 .section-link {
