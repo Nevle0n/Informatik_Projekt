@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-body, html {
-    margin: 0;
-    padding: 0;
-=======
-
-
-
-
 body{
     background-color: #F5EFE6;
 }
@@ -47,10 +38,7 @@ body{
 .button-right {
     width: 40%;
     max-width: 290px;
->>>>>>> 718ba9d6644078bdb09e9db35fb7bd6ee129b1ae
     height: 100%;
-<<<<<<< HEAD
-=======
     background-color: #4F6F52;
     float: right;
     margin-right: 5vi;
@@ -84,30 +72,13 @@ body{
     width: 80%; /* Set container width */
     max-width: 700px; /* Set max-width for responsiveness */
     height: 450px; /* Set fixed height for the container */
->>>>>>> 718ba9d6644078bdb09e9db35fb7bd6ee129b1ae
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: Arial, sans-serif;
-    background-color: #fff;
+    overflow: hidden; /* Ensure the image doesn't overflow the container */
 }
 
-h1 {
-    margin: 20px 0;
-    font-size: 5rem;
-    font-weight: bold;
-}
 
-<<<<<<< HEAD
-.container {
-    display: flex;
-    width: 300%;
-    max-width: 1200px;
-    height: 70vh; /* Höhe der Boxen */
-    justify-content: space-between;
-    gap: 20px; /* Lücke zwischen den Boxen */
-=======
 .slideshow .btn_left {
     position: absolute;
     top: 50%;
@@ -122,10 +93,7 @@ h1 {
     cursor: pointer;
     border-radius: 5px;
     text-align: center;
->>>>>>> 718ba9d6644078bdb09e9db35fb7bd6ee129b1ae
 }
-<<<<<<< HEAD
-=======
 .slideshow .btn_right {
     position: absolute;
     top: 50%;
@@ -143,24 +111,16 @@ h1 {
 }
 .slideshow :hover {
     color: #1A4D2E;
->>>>>>> 718ba9d6644078bdb09e9db35fb7bd6ee129b1ae
 
-.section {
-    flex: 1;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    position: relative;
+
 }
 
-#damen {
-    background-image: url('DELINEV\ Woman\ Bild.jpg'); /* Setze hier den Pfad zu deinem Damenbild ein */
+#slideshow_img {
+    width: 100%; /* Set width to fill the container */
+    height: 100%; /* Set height to fill the container */
+    object-fit: cover; /* Fill the container, maintaining aspect ratio */
 }
 
-<<<<<<< HEAD
-#herren {
-    background-image: url('DELINEV\ Men\ Bild.jpeg'); /* Setze hier den Pfad zu deinem Herrenbild ein */
-=======
 
 
 
@@ -183,49 +143,25 @@ h1 {
     transition: background-color 0.3s ease-out;
     border-bottom: #4F6F52;
     border-bottom-style: solid;
->>>>>>> 718ba9d6644078bdb09e9db35fb7bd6ee129b1ae
 }
 
-<<<<<<< HEAD
-.section-link {
-    display: block;
-    height: 100%;
-=======
 
 
 
 #navbar a{
     color: white;
->>>>>>> 718ba9d6644078bdb09e9db35fb7bd6ee129b1ae
     text-decoration: none;
-    color: white;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+    display: block;
+    padding: 15px;
+    float: left;
 }
 
-<<<<<<< HEAD
-.overlay {
-    background: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: background 0.3s;
-=======
 #navbar a:hover{
     background-color: #E8DFCA;
     color: white;
->>>>>>> 718ba9d6644078bdb09e9db35fb7bd6ee129b1ae
 }
 
-<<<<<<< HEAD
-.overlay:hover {
-    background: rgba(0, 0, 0, 0.7);
-=======
 #topnav a:active {
     background-color: #E8DFCA;
     color: white;
@@ -242,15 +178,8 @@ h1 {
     float: left;
     top: 50%;
     max-width: min-content;
->>>>>>> 718ba9d6644078bdb09e9db35fb7bd6ee129b1ae
 }
 
-<<<<<<< HEAD
-.text {
-    font-size: 3.75rem;
-    font-weight: bold;
-    text-transform: uppercase;
-=======
 #navbar a.center{
     float: none;
     position: absolute;
@@ -258,11 +187,8 @@ h1 {
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: min-content;
->>>>>>> 718ba9d6644078bdb09e9db35fb7bd6ee129b1ae
 }
 
-<<<<<<< HEAD
-=======
 
 
 
@@ -354,4 +280,89 @@ input#s:focus + .close span.back{
     transform: rotate(-45deg);
     opacity:1;
 }
->>>>>>> 718ba9d6644078bdb09e9db35fb7bd6ee129b1ae
+
+
+
+
+
+
+
+
+
+/* Frontpage */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+ 
+h1 {
+    margin: 20px 0;
+    font-size: 3rem;
+    font-weight: bold;
+}
+ 
+.container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    height: 70vh; /* Höhe der Boxen */
+    justify-content: space-between;
+    gap: 20px; /* Lücke zwischen den Boxen */
+}
+ 
+.section {
+    flex: 1;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+ 
+#damen {
+    background-image: url('DELINEV Woman Bild.jpg'); /* Setze hier den Pfad zu deinem Damenbild ein */
+}
+ 
+#herren {
+    background-image: url('DELINEV Men Bild.jpeg'); /* Setze hier den Pfad zu deinem Herrenbild ein */
+}
+ 
+.section-link {
+    display: block;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+ 
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.3s;
+}
+ 
+.overlay:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+ 
+.text {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
