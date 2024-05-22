@@ -149,11 +149,11 @@
             }).format(value);
         };
        
+        var simg = document.getElementById("ScrollingImg");
         
         function slideImg() {
-            var img = document.getElementById("ScrollingImg");
-            if ((document.body.scrollTop > 550 || document.documentElement.scrollTop > 550) && (document.body.scrollTop < 675 || document.documentElement.scrollTop < 675)){
-                img.style.left = formatPercentage((725-document.documentElement.scrollTop)/100);;  
+            if (document.documentElement.scrollTop > 550 && document.documentElement.scrollTop < 675){
+                simg.style.left = formatPercentage((725-document.documentElement.scrollTop)/100);;  
             }
         }
     </script>
