@@ -94,6 +94,11 @@
  
     <!--Scripts-->
     <script>
+
+    window.onscroll = function() {navbarScroll(), slideImg()};
+
+
+
         // Slideshow
         slideshowIntervall = setInterval(slideshow, 10000);
         
@@ -115,7 +120,6 @@
         }
  
         // Navbar scroll
-        window.onscroll = function() {navbarScroll()};
  
         function navbarScroll() {
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
@@ -136,8 +140,6 @@
 
         // Information Board sliding Img
 
-
-        window.onscroll = function() {slideImg()};
 
         const formatPercentage = (value, locale = "en-GB") => {
             return Intl.NumberFormat(locale, {
