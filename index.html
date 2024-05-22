@@ -152,8 +152,8 @@
         
         function slideImg() {
             var img = document.getElementById("ScrollingImg");
-            if ((document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) && (document.body.scrollTop < 700 || document.documentElement.scrollTop > 700)){
-                img.style.left = formatPercentage((650-document.documentElement.scrollTop)/100);;  
+            if ((document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) && (document.body.scrollTop < 750 || document.documentElement.scrollTop < 750)){
+                img.style.left = formatPercentage((700-document.documentElement.scrollTop)/100);;  
                 document.getElementById("test").style.backgroundColor = "white";
             }
         }
