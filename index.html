@@ -10,28 +10,57 @@
     <title>
         DELINEV
     </title>
+    <style>
+        /* Neues CSS für die Animation */
+        .scrolling-container {
+            position: relative;
+            width: 100%;
+            height: 1000px;
+            background-color: black;
+            overflow: hidden;
+        }
+
+        .scrolling-image {
+            position: absolute;
+            top: 50%;
+            left: 100%;
+            transform: translateY(-50%);
+            width: 50%;
+            animation: scrollImage 10s linear infinite;
+        }
+
+        @keyframes scrollImage {
+            0% {
+                left: 100%;
+            }
+            100% {
+                left: 0%;
+            }
+        }
+
+        .text-container {
+            position: absolute;
+            top: 50%;
+            left: 5%;
+            transform: translateY(-50%);
+            color: white;
+            width: 40%;
+        }
+    </style>
 </head>
- 
- 
- 
- 
- 
- 
  
 <!--Main Webseite-->
 <body>
  
- 
     <!--Navbar-->
     <div id="navbar">
- 
         <!--<a id="search" href="#search" class="left"><i class="fa-solid fa-magnifying-glass"></i> Search</a>-->
         <a href="#profile" class="right"><i class="fa-regular fa-user"></i></a>
         <a href="#settings" class="right">Settings</a>
         <a href="#home" class="center"><img src="DELINEV_LOGO.png" alt="logo" style="display: block; margin-left: auto; margin-right: auto; width: 50%; padding-top: 25px; padding-bottom: 50px;"></a>
         <div class="search-box" class="left">
             <div class="searchform">
-                <input id="s" type="text"/>    
+                <input id="s" type="text" value="Search site"/>    
                 <div class="close">
                     <span class="front"></span>
                     <span class="back"></span>
@@ -40,29 +69,24 @@
         </div>
     </div>
  
- 
- 
     <!--Slideshow-->
     <div class="slideshow">
-        <img id="slideshow_img" src="Slideshow Informatik Bild 1.jpeg" alt="Image 1">
+        <img id="slideshow_img" src="download.jpg" alt="Image 1">
         <button class="btn_left" onclick="count -= 2, slideshow(), slideshowReset()"><i class="fa-solid fa-chevron-left"></i></button>
         <button class="btn_right" onclick="slideshow(), slideshowReset()"><i class="fa-solid fa-chevron-right"></i></button>
     </div>
  
-    
-
-
-    <!--Wesbite Information-->
-    <div style="width: 100%; height: 1000px; background-color: black; right: 0px; left: 0px;">
-        <p id="text" style="color: white;">
-            Entdecken Sie bei DELINEV stilvolle und trendbewusste Mode. Unsere hochwertigen Kollektionen bieten das perfekte Outfit für jeden Anlass. Geniessen Sie eine benutzerfreundliche Website, exzellenten Kundenservice und schnelle Lieferzeiten. Shoppen Sie jetzt und erleben Sie Mode auf höchstem Niveau!
-        </p>
+    <div class="scrolling-container">
+        <div class="text-container">
+            <p id="text">
+                DELINEV wurde mit der Vision gegründet, hochwertige und trendbewusste Mode für jedermann zugänglich zu machen. Seit der Gründung hat sich die Marke durch ihr Engagement für Qualität, Stil und Kundenzufriedenheit einen festen Platz in der Modewelt erobert. Unsere Reise begann mit einer kleinen Kollektion, die schnell wuchs und heute eine breite Palette an eleganten und zeitgemäßen Kleidungsstücken umfasst. Bei DELINEV kombinieren wir Tradition und Innovation, um Ihnen stets das Beste aus der Modewelt zu bieten.
+                Entdecken Sie bei DELINEV stilvolle und trendbewusste Mode. Unsere hochwertigen Kollektionen bieten das perfekte Outfit für jeden Anlass. Geniessen Sie eine benutzerfreundliche Website, exzellenten Kundenservice und schnelle Lieferzeiten. Shoppen Sie jetzt und erleben Sie Mode auf höchstem Niveau!
+            </p>
+        </div>
+        <img src="/mnt/data/image.png" class="scrolling-image" alt="Scrolling Image">
     </div>
-
-
-
-
- <!--Product Section-->
+ 
+    <!--Product Section-->
     <div class="buttons-section">
         <div class="section-title">MÄNNER</div>
         <div class="button-grid">
@@ -104,27 +128,9 @@
             <button class="grid-button">Button 16</button>
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
     <!--Scripts-->
     <script>
- 
-        
- 
- 
         // Slideshow
         slideshowIntervall = setInterval(slideshow, 10000);
         
@@ -140,12 +146,10 @@
             
         }
  
- 
         function slideshowReset() {
             clearInterval(slideshowIntervall)
             slideshowIntervall = setInterval(slideshow, 10000);
         }
- 
  
         // Navbar scroll
         window.onscroll = function() {navbarScroll()};
@@ -164,12 +168,6 @@
                 });
             }
         }
-        
- 
     </script>
- 
- 
- 
- 
 </body>
 </html>
