@@ -250,11 +250,46 @@ input#s:focus + .close span.back{
 
 
 
+/* Information Board */
+.scrolling-container {
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    background-color: black;
+    overflow: hidden;
+}
+
+.scrolling-image {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    width: 50%;
+    animation: scrollImage 10s linear infinite;
+}
+
+@keyframes scrollImage {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: 0%;
+    }
+}
+
+.text-container {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    color: white;
+    width: 40%;
+}
+
+
 
 
 /* Preview-Grid */
-
-
 
 .buttons-section {
     max-width: 1000px;
