@@ -152,7 +152,7 @@
         
         function slideImg() {
             var img = document.getElementById("ScrollingImg");
-            if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60 || document.body.scrollTop < 1500 || document.documentElement.scrollTop < 1500){
+            if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60 & document.body.scrollTop < 150 || document.documentElement.scrollTop < 150){
                 img.style.left = formatPercentage(200-document.body.scrollTop);;    
                 document.getElementById("test").style.backgroundColor = "white";
             }
