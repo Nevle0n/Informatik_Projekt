@@ -46,7 +46,7 @@
                 Entdecken Sie bei DELINEV stilvolle und trendbewusste Mode. Unsere hochwertigen Kollektionen bieten das perfekte Outfit für jeden Anlass. Geniessen Sie eine benutzerfreundliche Website, exzellenten Kundenservice und schnelle Lieferzeiten. Shoppen Sie jetzt und erleben Sie Mode auf höchstem Niveau!
             </p>
         </div>
-        <img src="image.png" class="scrolling-image" alt="Scrolling Image">
+        <img src="image.png" class="scrolling-image" alt="Scrolling Image" id="ScrollingImg">
     </div>
  
     <!--Product Section-->
@@ -129,6 +129,29 @@
                 document.querySelectorAll('#navbar a').forEach(function(navbarLink) {
                     navbarLink.style.color = "white";
                 });
+            }
+        }
+
+
+
+        // Information Board sliding Img
+
+
+        window.onscroll = function() {slideImg(document.body.scrollTop)};
+
+        const formatPercentage = (value, locale = "en-GB") => {
+            return Intl.NumberFormat(locale, {
+                style: "percent",
+                minimumFractionDigits: 1,
+                maximumFractionDigits: 2
+            }).format(value);
+        };
+       
+        
+        function slideImg(fromtop) {
+            var img = document.getElementById("ScrollingImg");
+            if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60 || document.body.scrollTop < 150 || document.documentElement.scrollTop < 150){
+                img.style.left = formatPercentage(100-fromtop);;    
             }
         }
     </script>
