@@ -40,7 +40,7 @@
     </div>
  
     <div class="scrolling-container">
-        <div class="text-container" id="test">
+        <div class="text-container">
             <p id="text">
                 DELINEV wurde mit der Vision gegründet, hochwertige und trendbewusste Mode für jedermann zugänglich zu machen. Seit der Gründung hat sich die Marke durch ihr Engagement für Qualität, Stil und Kundenzufriedenheit einen festen Platz in der Modewelt erobert. Unsere Reise begann mit einer kleinen Kollektion, die schnell wuchs und heute eine breite Palette an eleganten und zeitgemäßen Kleidungsstücken umfasst. Bei DELINEV kombinieren wir Tradition und Innovation, um Ihnen stets das Beste aus der Modewelt zu bieten.
                 Entdecken Sie bei DELINEV stilvolle und trendbewusste Mode. Unsere hochwertigen Kollektionen bieten das perfekte Outfit für jeden Anlass. Geniessen Sie eine benutzerfreundliche Website, exzellenten Kundenservice und schnelle Lieferzeiten. Shoppen Sie jetzt und erleben Sie Mode auf höchstem Niveau!
@@ -152,9 +152,8 @@
         
         function slideImg() {
             var img = document.getElementById("ScrollingImg");
-            if ((document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) && (document.body.scrollTop < 750 || document.documentElement.scrollTop < 750)){
-                img.style.left = formatPercentage((700-document.documentElement.scrollTop)/100);;  
-                document.getElementById("test").style.backgroundColor = "white";
+            if ((document.body.scrollTop > 550 || document.documentElement.scrollTop > 550) && (document.body.scrollTop < 675 || document.documentElement.scrollTop < 675)){
+                img.style.left = formatPercentage((725-document.documentElement.scrollTop)/100);;  
             }
         }
     </script>
