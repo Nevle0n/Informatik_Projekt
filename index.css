@@ -265,7 +265,7 @@ input#s:focus + .close span.back{
     left: 100%;
     transform: translateY(-50%);
     width: 50%;
-    animation: scrollImage 10s linear ease-in-out;
+    animation: scrollImage 10s linear alternate;
 }
 
 @keyframes scrollImage {
