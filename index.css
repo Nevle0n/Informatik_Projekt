@@ -123,12 +123,12 @@ body{
     padding: 15px;
     float: left;
 }
-
+/*
 #navbar a:hover{
     background-color: #F5EFE6;
     color: white;
 }
-
+*/
 #topnav a:active {
     background-color: #F5EFE6;
     color: white;
@@ -174,7 +174,7 @@ body{
     display:inline-block;
     position:relative;
     }
-    
+
 input#s{
     border:none;
     background:transparent;
