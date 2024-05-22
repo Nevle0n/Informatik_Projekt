@@ -33,8 +33,8 @@ body{
 .slideshow {
     position: relative;
     margin: 75px auto; /* Centering horizontally */
-    padding: 20px; /* Adjust the padding as needed */
-    border: 2px solid #ccc; /* Optional: Add border for visualization */
+    padding: 0px; /* Adjust the padding as needed */
+    border: 2px solid black; /* Optional: Add border for visualization */
     width: 80%; /* Set container width */
     max-width: 700px; /* Set max-width for responsiveness */
     height: 450px; /* Set fixed height for the container */
