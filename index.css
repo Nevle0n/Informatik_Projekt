@@ -123,12 +123,12 @@ body{
 }
 
 #navbar a:hover{
-    background-color: #E8DFCA;
+    background-color: #F5EFE6;
     color: white;
 }
 
 #topnav a:active {
-    background-color: #E8DFCA;
+    background-color: #F5EFE6;
     color: white;
     font-size: 150%;
   }
