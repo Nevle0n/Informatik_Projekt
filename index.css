@@ -274,8 +274,8 @@ input#s:focus + .close span.back{
 }
 
 .grid-button {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     background-color: #E8DFCA;
     border: none;
     cursor: pointer;
