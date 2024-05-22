@@ -137,7 +137,7 @@
         // Information Board sliding Img
 
 
-        window.onscroll = function() {slideImg(document.body.scrollTop)};
+        window.onscroll = function() {slideImg()};
 
         const formatPercentage = (value, locale = "en-GB") => {
             return Intl.NumberFormat(locale, {
@@ -148,10 +148,10 @@
         };
        
         
-        function slideImg(fromtop) {
+        function slideImg() {
             var img = document.getElementById("ScrollingImg");
             if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60 || document.body.scrollTop < 150 || document.documentElement.scrollTop < 150){
-                img.style.left = formatPercentage(100-fromtop);;    
+                img.style.left = formatPercentage(100-document.body.scrollTop);;    
             }
         }
     </script>
