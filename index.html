@@ -153,7 +153,7 @@
         
         function slideImg() {
             if (document.documentElement.scrollTop > 425 && document.documentElement.scrollTop < 675){
-                simg.style.left = formatPercentage((725 - (675 - ((675 -  document.documentElement.scrollTop)) / 3))/100);;  
+                simg.style.left = formatPercentage((725 - (675 - ((675 -  document.documentElement.scrollTop) / 3)))/100);;  
             }
             else if (document.documentElement.scrollTop > 675){
                 simg.style.left = "50%";
