@@ -188,11 +188,11 @@ input#s{
     line-height:0px;
     vertical-align:top;
     padding:0px 15px;
-    -webkit-transition: width .5s; /* Safari */
+    -webkit-transition: width .5s;
     transition: width .5s; 
     position:relative;
     z-index:2;
-    color:#fff;
+    color: black;
     }
 input#s:focus{
     width:200px;
