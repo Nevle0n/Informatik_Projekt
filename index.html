@@ -22,9 +22,9 @@
         <a href="#settings" class="right">Settings</a>
         <a href="#home" class="center"><img src="DELINEV_LOGO.png" width="445" height="75" alt="logo" style="display: block;"></a>
         <div class="search-box" class="left">
-            <div class="searchform">
+            <div class="searchform" id="searchf">
                 <input id="s" type="text" placeholder="Search.."/>    
-                <div class="close">
+                <div class="close" id="closef">
                     <span class="front"></span>
                     <span class="back"></span>
                 </div>   
@@ -123,15 +123,19 @@
         function navbarScroll() {
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
                 document.getElementById("navbar").style.backgroundColor = "#F5EFE6";
-                document.querySelectorAll('#navbar a').forEach(function(navbarLink) {
+                document.querySelectorAll("#navbar a").forEach(function(navbarLink) {
                     navbarLink.style.color = "black";
                 });
+                document.getElementById("searchf").style.borderColor = "black"
+                document.getElementById("closef").style.backgroundColor = "black"
             }
             else{
                 document.getElementById("navbar").style.backgroundColor = "transparent";
                 document.querySelectorAll('#navbar a').forEach(function(navbarLink) {
                     navbarLink.style.color = "white";
                 });
+                document.getElementById("searchf").style.borderColor = "black"
+                document.getElementById("closef").style.backgroundColor = "black"
             }
         }
 
