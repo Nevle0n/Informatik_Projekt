@@ -108,7 +108,7 @@ body{
     -moz-transition: background-color 0.3s ease-out;
     -o-transition: background-color 0.3s ease-out;
     transition: background-color 0.3s ease-out;
-    border-bottom: black;
+    border-bottom-color: black;
     border-bottom: 1px solid;
 }
 
