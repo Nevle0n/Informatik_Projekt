@@ -42,7 +42,7 @@ CREATE TABLE `produkte` (
 --
 
 INSERT INTO `produkte` (`ID`, `Art`, `Name`, `Preis`, `Size`, `Geschlecht`) VALUES
-(0, 'Jacke', 'Delinev Urbanite Jacket', 55, 'S', 'Mann'),
+(1, 'Jacke', 'Delinev Urbanite Jacket', 55, 'S', 'Mann'),
 (2, 'Jacke', 'Delinev Urbanite Jacket', 60, 'M', 'Mann'),
 (3, 'Jacke', 'Delinev Urbanite Jacket', 65, 'L', 'Mann'),
 (4, 'Jacke', 'Delinev Urbanite Jacket', 70, 'XL', 'Mann'),
