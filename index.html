@@ -152,8 +152,8 @@
         var simg = document.getElementById("ScrollingImg");
         
         function slideImg() {
-            if (document.documentElement.scrollTop > 550 && document.documentElement.scrollTop < 675){
-                simg.style.left = formatPercentage((725-document.documentElement.scrollTop)/100);;  
+            if (document.documentElement.scrollTop > 425 && document.documentElement.scrollTop < 675){
+                simg.style.left = formatPercentage((725 - (675 - ((675 -  document.documentElement.scrollTop)) / 2))/100);;  
             }
         }
     </script>
