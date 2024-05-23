@@ -265,22 +265,9 @@ input#s:focus + .close span.back{
     left: 100%;
     transform: translateY(-50%);
     width: 50%;
-<<<<<<< HEAD
-    animation: scrollImage 10s linear infinite;
-=======
-    /*animation: scrollImage 10s linear infinite;*/
->>>>>>> 30ba0e771574c83f93df0b0c21c5ffe12d63c0e3
 }
-/*
-@keyframes scrollImage {
-    0% {
-        left: 100%;
-    }
-    100% {
-        left: 25%;
-    }
-}
-*/
+
+
 .text-container {
     position: absolute;
     top: 50%;
