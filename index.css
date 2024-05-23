@@ -131,7 +131,7 @@ body{
 */
 #topnav a:active {
     background-color: #F5EFE6;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 150%;
   }
 
