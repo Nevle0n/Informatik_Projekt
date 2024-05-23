@@ -166,7 +166,7 @@ body{
 .search-box{
     width:200px;
     margin-top: 16px;
-    
+    margin-left: 10px;
     /*margin:100px auto;*/
 }
 .searchform{
