@@ -98,7 +98,7 @@ body{
     z-index: 1;
     background-color: transparent; /* Set background color*/
     position: fixed; /* Fix navbar position*/
-    color: white; /* Set base text color*/
+    color: rgb(0, 0, 0); /* Set base text color*/
     width: 100%; /* Set nabar width*/
     height: 100px;
     top: 0px; /* Set top margin*/
@@ -116,7 +116,7 @@ body{
 
 
 #navbar a{
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     text-align: center;
     display: block;
